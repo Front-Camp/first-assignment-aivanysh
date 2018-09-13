@@ -9,6 +9,8 @@
  */
 const truncate = (str, length = 0, replacer = '...') => {
   /* your logic here...*/
+  if(str.length <= length) 
+  return str;
   var strarr = [];
   for(let i=0; i<length; i++){
       strarr+= str[i];

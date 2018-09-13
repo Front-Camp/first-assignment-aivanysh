@@ -8,7 +8,19 @@
 */
 const max = arr => {
   /* your logic here...*/
-  return Math.max.apply( Math, arr );
+  for(let i=0; i<arr.length; i++){
+    if(isNaN(arr[i]) !== true && isFinite(arr[i])){
+        var arrMax = arr[i];
+    }
+}
+
+for(let i=0; i<arr.length; i++){
+    if(isNaN(arr[i]) !== true && isFinite(arr[i])){
+        if (arr[i]> arrMax)
+         arrMax = arr[i];
+    }
+}
+return arrMax;
 
 };
 
