@@ -7,6 +7,17 @@
  */
 const getFlags = arr => {
   /* your logic here...*/
+  var arrsum = [];
+  for(let i = 0; i<arr.length; i++){
+      for(let j = 0; j<arr[i].flags.length; j++){
+          arrsum.push(arr[i].flags[j]);
+      }
+  }
+  return arrsum;
 };
 
 export default getFlags;
+
+
+
+

@@ -9,6 +9,11 @@
  */
 const truncate = (str, length = 0, replacer = '...') => {
   /* your logic here...*/
+  var strarr = [];
+  for(i=0; i<length; i++){
+      strarr+= str[i];
+  }
+  return strarr + replacer;
 };
 
 export default truncate;

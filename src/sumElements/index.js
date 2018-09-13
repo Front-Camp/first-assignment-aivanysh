@@ -12,6 +12,20 @@
  */
 const sumElements = arr => {
   /* your logic here...*/
+  
+function isAN(number) {
+  if(value instanceof Number)
+    value = value.valueOf(); 
+  return  isFinite(value) && value === parseInt(value, 10);
+}
+
+    let arrSum = 0;
+  for(let i=0; i<arr.length; i++){
+      if(isAN(arr[i])==true){
+          arrSum += arr[i];
+      }
+  }
+  return arrSum;
 };
 
 export default sumElements;
