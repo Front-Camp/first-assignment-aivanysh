@@ -13,7 +13,7 @@
 const sumElements = arr => {
   /* your logic here...*/
   
-function isAN(number) {
+function isAN(value) {
   if(value instanceof Number)
     value = value.valueOf(); 
   return  isFinite(value) && value === parseInt(value, 10);
