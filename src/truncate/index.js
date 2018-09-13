@@ -10,7 +10,7 @@
 const truncate = (str, length = 0, replacer = '...') => {
   /* your logic here...*/
   var strarr = [];
-  for(i=0; i<length; i++){
+  for(let i=0; i<length; i++){
       strarr+= str[i];
   }
   return strarr + replacer;
